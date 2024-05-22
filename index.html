@@ -3,83 +3,161 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My GitHub Page</title>
+    <title>Xiangyu Zeng</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         body {
+            display: flex;
             font-family: Arial, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            background-color: #f2f2f2;
-        }
-        #container {
-            width: 80%;
-            max-width: 800px;
-            background-color: #fff;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            overflow: hidden;
-            display: flex;
-            flex-direction: column;
         }
         #profile {
-            padding: 20px;
-            text-align: center;
-            background-color: #f0f0f0;
-        }
-        #profile img {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            margin-bottom: 20px;
+            width: 20%;
+            /*padding: 20px;*/
+            margin-left: 150px; /* 设置左边距为 20px，你可以根据需要调整 */
+            margin-top: 50px;
         }
         #content {
+            width: 80%;
             padding: 20px;
         }
-        h1, h2 {
-            color: #333;
+        /*img {*/
+        /*    width: 100%;*/
+        /*    border-radius: 50%;*/
+        /*}*/
+        img {
+            width: 180px; /* 修改图片宽度 */
+            /*height: auto; !* 让高度根据比例自动调整 *!*/
+            height: 169px; /* 让高度根据比例自动调整 */
+            border-radius: 5%; /* 可选，如果你想要圆形图片 */
+        }
+        a {
+            text-decoration: none;
+            color: #0071ab;
+            font-size: 18px;
+            /*!*color: #007lab;*! #22406a;*/
         }
         p {
-            color: #666;
+            margin: 0; /* 设置段落的上下外边距为0 */
+            line-height: 1.7; /* 设置行高为正常大小 */
+            font-size: 18px;
         }
-        footer {
-            text-align: center;
-            padding: 20px;
-            background-color: #f0f0f0;
+        li{
+            font-size: 18px;
+            line-height: 1.7; /* 设置行高为正常大小 */
+        }
+        /* 让标题加粗 */
+        strong {
+            font-weight: bold; /* 设置字体加粗 */
         }
     </style>
 </head>
 <body>
-    <div id="container">
-        <div id="profile">
-            <img src="your-photo.jpg" alt="Your Photo">
-            <h1>[Your Name]</h1>
-            <p>[Your Position/Role]<br>[Your Institution/Organization]</p>
-        </div>
-        
-        <div id="content">
-            <section id="biography">
-                <h2>Biography</h2>
-                <p>
-                    [Your Biography]
-                </p>
-            </section>
-            
-            <section id="publications">
-                <h2>Publications</h2>
+    <div id="profile">
+        <img src="me2.jpg" alt="Your Photo">
+        <h2>Xiangyu Zeng</h2>
+        <p>
+            <i class="fa-solid fa-envelope"></i>
+            zengxy@std.uestc.edu.cn
+        </p>
+        <p>
+            <i class="fa-brands fa-github"></i>
+            <a href="https://github.com/zengxyyu">Github</a>
+        </p>
+        <p>
+            <i class="fa-brands fa-google"></i>
+            <a href="https://scholar.google.com.hk/citations?user=5Xy-gPEAAAAJ&hl=zh-CN">Google Scholar</a>
+        </p>
+    </div>
+
+    <div id="content">
+<!--        <header>-->
+<!--            <h1>Welcome to My GitHub Page</h1>-->
+<!--        </header>-->
+        <section id="biography">
+            <h2>Biography</h2>
+            <p>
+                Hello! I am a second-year MSc student at
+                <a href="https://www.uestc.edu.cn/">
+                <img src="logo.jpg" alt="uestc" style="width: 20px; height: auto; vertical-align: middle;">
+                University of Electronic Science and Technology of China (UESTC)</a>.
+                I conduct research at <a href="https://icct.uestc.edu.cn/sysgk/sysld.htm">Laboratory of Intelligent Collaborative Computing</a>, under the supervision of
+                <a href="https://www.scse.uestc.edu.cn/info/1081/10964.htm">Prof. Jie Lin</a>.
+            </p>
+            <p>
+                My primary research interests include deep learning and AGI, mainly focusing on LLM.
+            </p>
+        </section>
+        <section id="research">
+            <h2>Research Area</h2>
+            <p>
                 <ul>
-                    <li>[Publication 1]</li>
-                    <li>[Publication 2]</li>
-                    <!-- Add more publications as needed -->
+                    <li>LLM and Agent (e.g., Transformers with memory)</li>
+                    <li>Deep Learning and its Applications (e.g., Medical Images)</li>
                 </ul>
-            </section>
-        </div>
-        
-        <footer>
-            <p>© 2024 [Your Name]</p>
-        </footer>
+            </p>
+        </section>
+        <section id="publications">
+<!--            <h2><i class="fa-solid fa-book"></i>Publications</h2>-->
+            <h2>Publications</h2>
+            <ul>
+                <li>
+                    <a href="https://openreview.net/forum?id=vBo7544jZx&referrer=%5BAuthor%20Console%5D(%2Fgroup%3Fid%3DICLR.cc%2F2024%2FConference%2FAuthors%23your-submissions)"><b>A Framework for Inference Inspired by Human Memory Mechanisms.</b></a>
+                    <p><b>Xiangyu Zeng</b>, Jie Lin*</sup>, Piao Hu, Ruizheng Huang, Zhicheng Zhang</p>
+                    <p>International Conference on Learning Representations (ICLR), 2024.</p>
+                    <p>
+                        <a href="https://openreview.net/pdf?id=vBo7544jZx">[PDF]</a>
+                        <a href="https://github.com/zengxyyu/PMI-TR">[CODE]</a>
+                    </p>
+                </li>
+                <li>
+                    <a href="https://openreview.net/forum?id=vBo7544jZx&referrer=%5BAuthor%20Console%5D(%2Fgroup%3Fid%3DICLR.cc%2F2024%2FConference%2FAuthors%23your-submissions)"><b>SDMTR: A Brain-inspired Transformer for Relation Inference.</b></a>
+                    <p><b>Xiangyu Zeng</b>, Jie Lin*</sup>, Piao Hu, Zhihao Li, Tianxi Huang</p>
+                    <p>Artificial Intelligence and Statistics (AISTATS), 2024.</p>
+                    <p>
+                        <a href="https://proceedings.mlr.press/v238/zeng24a/zeng24a.pdf">[PDF]</a>
+                        <a href="https://github.com/zengxyyu/SDMTR">[CODE]</a>
+                    </p>
+                </li>
+                <li>
+                    <a href="https://link.springer.com/article/10.1007/s12559-024-10264-6"><b>Intelligent Inspection Guidance of Urethral Endoscopy Based on SLAM with Blood Vessel Attentional Features.</b></a>
+                    <p>Jie Lin*</sup>, <b>Xiangyu Zeng</b>, Yulong Pan, Shangqing Ren, Yige Bao</p>
+                    <p>Cognitive Computation, 2024.</p>
+                    <p>
+                        <a href="https://link.springer.com/article/10.1007/s12559-024-10264-6">[PDF]</a>
+                        <a href="https://github.com/linjiebelfast/Compliance-Evaluation-of-Database-Application-Systems">[CODE]</a>
+                    </p>
+                </li>
+                <li>
+                    <a href="https://ieeexplore.ieee.org/abstract/document/10032488"><b>Time Series Classification Based on Multi-Dimensional Feature Fusion.</b></a>
+                    <p>Shuo Quan, Mengyu Sun*</sup>, <b>Xiangyu Zeng</b>, Xuliang Wang, Zeya Zhu</p>
+                    <p>IEEE Access, 2023.</p>
+                    <p>
+                        <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10032488">[PDF]</a>
+<!--                        <a href="https://github.com/linjiebelfast/Compliance-Evaluation-of-Database-Application-Systems">[CODE]</a>-->
+                    </p>
+                </li>
+            </ul>
+        </section>
+        <section id="honors">
+            <h2>Honors and Awards</h2>
+            <p>
+                <ul>
+            <li>Outstanding Graduate Student of the <a href="https://www.uestc.edu.cn/">UESTC</a>, 11-2023</li>
+                    <li>Outstanding Student of the Laboratory of Intelligent Collaborative Computing at the <a href="https://www.uestc.edu.cn/">UESTC</a>, 12-2023</li>
+                    <li>Academic Young Achievers of the <a href="https://www.uestc.edu.cn/">UESTC</a>, 03-2024</li>
+                    <li>Excellent Student Cadre of the <a href="https://www.uestc.edu.cn/">UESTC</a>,04-2024</li>
+                </ul>
+            </p>
+        </section>
+        <section id="internship">
+            <h2>Internship Experience</h2>
+            <p>
+                <ul>
+                    <li>06.2022-12.2022: China Telecom Research Institute, Beijing, China</li>
+                </ul>
+            </p>
+        </section>
+
     </div>
 </body>
 </html>
